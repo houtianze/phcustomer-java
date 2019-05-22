@@ -2,6 +2,8 @@ package com.houtianze.phcustomer.repository;
 
 import com.houtianze.phcustomer.model.Customer;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-public interface CustomerRepository extends CrudRepository<Customer, Long> {}
+@RepositoryRestResource
+public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {}
