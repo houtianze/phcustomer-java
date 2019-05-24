@@ -1,5 +1,7 @@
 package com.houtianze.phcustomer.repository;
 
+import java.util.List;
+
 import com.houtianze.phcustomer.model.Customer;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -8,4 +10,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 // @CrossOrigin(origins = {"*"})
 @RepositoryRestResource
-public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {}
+public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {
+    // List<Customer> findAll();
+}

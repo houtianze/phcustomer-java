@@ -3,6 +3,7 @@ package com.houtianze.phcustomer.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -27,6 +28,7 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	// @Convert(converter = StatusConverter.class)
 	@Enumerated(EnumType.STRING)
 	private Status status;
 
